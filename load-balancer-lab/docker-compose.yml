@@ -1,0 +1,13 @@
+services:
+
+  server1:
+    build: ./server1
+    container_name: server1
+    ports:
+      - "8081:80"
+
+  server2:
+    build: ./server2
+    container_name: server2
+    ports:
+      - "8082:80"
