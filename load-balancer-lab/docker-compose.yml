@@ -11,3 +11,12 @@ services:
     container_name: server2
     ports:
       - "8082:80"
+
+  nginx:
+    build: ./nginx
+    container_name: load-balancer
+    ports:
+      - "8080:80"
+    depends_on:
+      - server1
+      - server2
