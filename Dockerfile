@@ -1,11 +1,11 @@
-#EXPOSE test
+#EXPOSE-Demo test
 # FROM nginx
 
 # EXPOSE 80
 
 # ----------------------------------
 
-#ENV Test
+#ENV-Demo Test
 # FROM ubuntu
 
 # ENV MY_NAME=Aung
